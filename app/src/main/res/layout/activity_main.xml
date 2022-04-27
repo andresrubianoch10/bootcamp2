@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:text="Hello World!"
-        android:textSize="25sp"
+        android:textColor="@color/purple_200"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,8 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:paddingEnd="16dp"
-        android:text="Subtitle!"
+        android:paddingEnd="32dp"
+        android:text="Colombia"
         app:layout_constraintRight_toRightOf="@id/textView_feed_title"
         app:layout_constraintTop_toBottomOf="@id/textView_feed_title" />
 
