@@ -2,6 +2,7 @@ package com.example.bootcamp2
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -11,6 +12,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val colorPurple = R.color.purple_200
+        val welcome = getString(R.string.bienvenidos)
+        val x = 15
+        if (x < 10) {
+            findViewById<TextView>(R.id.textView_feed_title).text = getString(R.string.bienvenidos)
+        } else {
+            findViewById<TextView>(R.id.textView_feed_title).text = getString(R.string.error)
+        }
 
         Log.i(BOOTCAMP, "onCreate")
     }
